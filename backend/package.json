@@ -1,0 +1,62 @@
+{
+  "name": "idurar-erp-crm",
+  "version": "4.1.0",
+  "engines": {
+    "npm": "10.2.4",
+    "node": "20.9.0"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js --ignore public/",
+    "production": "NODE_ENV=production",
+    "setup": "node src/setup/setup.js",
+    "upgrade": "node src/setup/upgrade.js",
+    "reset": "node src/setup/reset.js"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.850.0",
+    "bcryptjs": "^3.0.2",
+    "compression": "^1.8.1",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "currency.js": "2.0.4",
+    "dotenv": "17.2.0",
+    "express": "^5.1.0",
+    "express-fileupload": "^1.5.2",
+    "express-rate-limit": "^8.0.1",
+    "glob": "11.0.3",
+    "html-pdf": "^3.0.1",
+    "joi": "^17.13.3",
+    "jsonwebtoken": "^9.0.2",
+    "lodash": "^4.17.21",
+    "module-alias": "^2.2.3",
+    "moment": "^2.30.1",
+    "mongoose": "^8.16.4",
+    "mongoose-autopopulate": "^1.1.0",
+    "multer": "^2.0.2",
+    "node-cache": "^5.1.2",
+    "openai": "^5.10.2",
+    "pug": "^3.0.3",
+    "resend": "^4.7.0",
+    "shortid": "^2.2.17",
+    "transliteration": "^2.3.5"
+  },
+  "devDependencies": {
+    "nodemon": "3.1.10"
+  },
+  "_moduleAliases": {
+    "@": "src"
+  },
+  "main": "server.js",
+  "author": "IDURAR",
+  "email": "hello@idurarapp.com",
+  "license": "Fair-code License",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/idurar/idurar-erp-crm/.git"
+  },
+  "bugs": {
+    "url": "https://github.com/idurar/idurar-erp-crm//issues"
+  },
+  "homepage": "https://github.com/idurar/idurar-erp-crm/#readme"
+}
